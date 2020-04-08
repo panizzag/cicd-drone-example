@@ -3,7 +3,7 @@ type: ssh
 name: default
 
 server:
-  host: http://596fe1f7.ngrok.io
+  host: 596fe1f7.ngrok.io:80
   user: root
   password: thisisasecret
 
