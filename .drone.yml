@@ -1,0 +1,17 @@
+kind: pipeline
+type: ssh
+name: default
+
+server:
+  host: 192.168.0.45:32773
+  user: root
+  password: thisisasecret
+
+pipeline:
+  build:
+    image: maven
+    commands:
+    # Set the M2_HOME EV  
+      - export M2_HOME=/usr/share/maven
+    # Run a maven command
+      - mvn -version
